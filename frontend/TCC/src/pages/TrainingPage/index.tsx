@@ -16,18 +16,17 @@ import { getProcessingStatus } from "../../services/getProcessingStatus";
 const TrainingPage: React.FC = () => {
   const [currentUserId, setCurrentUserId] = useState<string | null>("");
   const [listCampaigns, setListCampaigns] = useState<ListCampaing[]>([]);
-  const [processStatus, setProcessStatus] = useState<any>();
+  const [processStatus, setProcessStatus] = useState<any>(null);
   const [isSpinning, setIsSpinning] = useState(false);
+  const [isMonitoring, setIsMonitoring] = useState(false); // Estado para monitorar
 
   useEffect(() => {
     const userId = localStorage.getItem("userId");
     if (userId) {
       setCurrentUserId(userId);
       handleReloadProcessStatus();
-    } else {
-      console.log(currentUserId);
     }
-  }, []); // Executa apenas uma vez após a montagem do componente
+  }, []);
 
   const handleRegisterUser = async () => {
     await registerUser();
@@ -39,9 +38,39 @@ const TrainingPage: React.FC = () => {
 
     setTimeout(async () => {
       setIsSpinning(false);
-      setProcessStatus(await getProcessingStatus());
+      const status = await getProcessingStatus();
+      setProcessStatus(status);
+
+      setIsMonitoring(true);
     }, 1000);
   };
+
+  const checkAllSucceeded = (status: Record<string, any[]>) => {
+    return Object.values(status).every((tasks) =>
+      tasks.every((task) => task.status === "SUCCEEDED")
+    );
+  };
+
+  useEffect(() => {
+    let intervalId: NodeJS.Timeout;
+
+    if (isMonitoring) {
+      intervalId = setInterval(async () => {
+        setIsSpinning(true);
+
+        const status = await getProcessingStatus();
+        setProcessStatus(status);
+        setIsSpinning(false);
+        if (status)
+          if (checkAllSucceeded(status)) {
+            setIsMonitoring(false);
+            clearInterval(intervalId);
+          }
+      }, 7000);
+    }
+
+    return () => clearInterval(intervalId);
+  }, [isMonitoring]);
 
   return (
     <>

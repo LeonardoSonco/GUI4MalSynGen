@@ -1,1 +1,1 @@
-# TCC-LeonardoSonco
+# GUI4MalSynGen

@@ -30,8 +30,9 @@ Clone o repositório do projeto:
 
 ```bash
 git clone https://github.com/LeonardoSonco/GUI4MalSynGen.git
+```bash
 
-Execução com Docker
+## Execução com Docker
 Backend da aplicação
 Abra o terminal.
 Navegue até a pasta autodroid.

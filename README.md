@@ -30,7 +30,7 @@ Clone o repositório do projeto:
 
 ```bash
 git clone https://github.com/LeonardoSonco/GUI4MalSynGen.git
-```bash
+bash
 
 ## Execução com Docker
 Backend da aplicação

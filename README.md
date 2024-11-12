@@ -52,13 +52,15 @@ git clone https://github.com/LeonardoSonco/GUI4MalSynGen.git
 ```bash
 ./start.sh
 ```
-**⚠️ Observações Importantes** </br>
+**⚠️ Observações Importantes** 
+</br></br>
 Se algum do script ./start.sh não estiver como executável, basta usar o comando abaixo para dar permissão de execução:
 ```bash
 chmod +x start.sh
 ```
 </br>
 Caso apareça a mensagem de permission denied ao tentar executar o script, basta repetir utilizando o comando:
+
 ```bash
 sudo su
 ```

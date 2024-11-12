@@ -68,9 +68,9 @@ Após a instalação e execução do Docker, a aplicação estará disponível l
 - Abra o navegador.
 - Digite na barra de busca:
 ```bash 
--  localhost:3000/
+localhost:3000
 ```
-Pronto! Agora você está acessando o conteúdo localmente em sua máquina.
+Pronto! Agora você acessou o conteúdo localmente em sua máquina.
 
 
 ## Execução de Campanhas de Treinamento
@@ -82,7 +82,7 @@ Para executar campanhas de treinamento, siga os passos abaixo:
 - dense layer sizes d: 256
 - number epochs: 1000
 
-2.Escolha o dataset disponível na pasta Dataset do repositório, chamado drebin215_small_64Malwares_64Benign.
+2. Escolha o dataset disponível na pasta Dataset do repositório, chamado drebin215_small_64Malwares_64Benign.
 
 3. Clique em Adicionar para que esses parâmetros sejam adicionados à lista de execução.
 

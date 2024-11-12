@@ -53,13 +53,15 @@ git clone https://github.com/LeonardoSonco/GUI4MalSynGen.git
 ./start.sh
 ```
 **⚠️ Observações Importantes** </br>
-Se o script ./start.sh não estiver como executável, use o comando abaixo para dar permissão de execução:
+Se algum do script ./start.sh não estiver como executável, basta usar o comando abaixo para dar permissão de execução:
 ```bash
 chmod +x start.sh
 ```
-Repita este processo para todos os scripts ./start.sh que não conseguir executar.
-
-Caso apareça a mensagem de permission denied ao tentar executar o script, use o comando sudo su e tente novamente.
+</br>
+Caso apareça a mensagem de permission denied ao tentar executar o script, basta repetir utilizando o comando:
+```bash
+sudo su
+```
 
 ## ⚙️ Uso
 Após a instalação e execução do Docker, a aplicação estará disponível localmente para uso:

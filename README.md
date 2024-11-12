@@ -65,8 +65,11 @@ Caso apareça a mensagem de permission denied ao tentar executar o script, use o
 ## Uso
 Após a instalação e execução do Docker, a aplicação estará disponível localmente para uso:
 
-Abra o navegador.
-Digite na barra de busca localhost:3000/.
+- Abra o navegador.
+- Digite na barra de busca:
+```bash 
+-  localhost:3000/
+```
 Pronto! Agora você está acessando o conteúdo localmente em sua máquina.
 
 
@@ -74,12 +77,13 @@ Pronto! Agora você está acessando o conteúdo localmente em sua máquina.
 Para executar campanhas de treinamento, siga os passos abaixo:
 
 1. Na interface, vá até o card de Parâmetros de Treinamento, e selecione a opção Custom preenchendo com os seguintes valores:
-verbosity: 20
-dense layer sizes g: 256
-dense layer sizes d: 256
-number epochs: 1000
+- verbosity: 20
+- dense layer sizes g: 256
+- dense layer sizes d: 256
+- number epochs: 1000
 
-   2.Escolha o dataset disponível na pasta Dataset do repositório, chamado drebin215_small_64Malwares_64Benign.
+2.Escolha o dataset disponível na pasta Dataset do repositório, chamado drebin215_small_64Malwares_64Benign.
+
 3. Clique em Adicionar para que esses parâmetros sejam adicionados à lista de execução.
 
 4. Clique no botão Iniciar para começar o treinamento. Se nada aparecer no card de Processos, clique no botão de Refresh para atualizar.

@@ -30,22 +30,25 @@ Clone o repositório do projeto:
 
 ```bash
 git clone https://github.com/LeonardoSonco/GUI4MalSynGen.git
-bash
+```
+
+
 
 ## Execução com Docker
 Backend da aplicação
 Abra o terminal.
 Navegue até a pasta autodroid.
 Execute o comando abaixo para iniciar o backend:
-bash
+
 Copiar código
 ./start.sh
-Frontend da aplicação
+
+- Frontend da aplicação
 Abra um novo terminal.
 Navegue até a pasta raiz do projeto.
 Acesse a pasta frontend.
 Execute o script com o comando:
-bash
+
 Copiar código
 ./start.sh
 Observações Importantes
@@ -60,7 +63,7 @@ Caso apareça a mensagem de permission denied ao tentar executar o script, use o
 
 Na primeira execução, o download das imagens do Docker pode levar algum tempo, dependendo da velocidade da sua conexão com a internet. Quando o download for concluído e o Docker estiver iniciado, o terminal exibirá as mensagens relevantes de execução.
 
-Uso
+## Uso
 Após a instalação e execução do Docker, a aplicação estará disponível localmente:
 
 Abra o navegador.

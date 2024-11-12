@@ -62,8 +62,6 @@ Repita este processo para todos os scripts ./start.sh que não conseguir executa
 
 Caso apareça a mensagem de permission denied ao tentar executar o script, use o comando sudo su e tente novamente.
 
-Na primeira execução, o download das imagens do Docker pode levar algum tempo, dependendo da velocidade da sua conexão com a internet. Quando o download for concluído e o Docker estiver iniciado, o terminal exibirá as mensagens relevantes de execução.
-
 ## Uso
 Após a instalação e execução do Docker, a aplicação estará disponível localmente para uso:
 

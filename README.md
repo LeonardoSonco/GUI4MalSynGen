@@ -13,7 +13,9 @@ GUI4MalSynGen é uma interface gráfica para o MalSynGen, uma ferramenta integra
 
 ## Arquitetura
 
-![Arquitetura da aplicação](./frontend/TCC/src/assets/img/system_context2.jpg)
+
+<img src="./frontend/TCC/src/assets/img/system_context2.png" alt="Arquitetura da aplicação" width="70%">
+
 
 ## Requisitos
 
